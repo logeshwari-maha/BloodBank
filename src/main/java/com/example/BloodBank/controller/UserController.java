@@ -19,7 +19,7 @@ import com.example.BloodBank.repository.UserRepository;
 
 @RestController
 @RequestMapping("/api")
-public class UserController {
+public class UserController { 
 
     @Autowired
     private UserRepository userRepository;
