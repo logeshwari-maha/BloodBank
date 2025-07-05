@@ -1,4 +1,4 @@
- package com.example.BloodBank.model;
+package com.example.BloodBank.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,7 +9,6 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "blood_requests")
-
 public class BloodRequest {
 
     @Id
@@ -23,7 +22,7 @@ public class BloodRequest {
     private String bloodGroup;
 
     @Column(name = "quantity", nullable = false)
-    private int quantity; // in units (e.g., 2 units)
+    private int quantity;
 
     @Column(name = "hospital_name", nullable = false)
     private String hospitalName;
@@ -32,7 +31,7 @@ public class BloodRequest {
     private String contactNumber;
 
     @Column(name = "status", nullable = false)
-    private String status; // e.g., PENDING, FULFILLED, REJECTED
+    private String status = "PENDING";
 
     public BloodRequest() {}
 
